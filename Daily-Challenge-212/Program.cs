@@ -11,13 +11,15 @@ namespace DailyChallenge212
         static void Main()
         {
             Console.WriteLine(Rovarspraket("Jag talar Rövarspråket!"));
+            Console.WriteLine(Rovarspraket("I'm speaking Robber's language!"));
+
 
             Console.ReadKey();
         }
 
         static string Rovarspraket(string input)
         {
-            var vowels = new char[] { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+            var vowels = new char[] { 'a', 'å', 'ä', 'e', 'i', 'o', 'ö', 'u', 'A', 'E', 'I', 'O', 'U' };
             string output = "";
 
             foreach (var c in input) {
